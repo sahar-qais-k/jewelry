@@ -1,12 +1,12 @@
 # Jewelry Website
 
 
-eCommers Responsive Website
+Front-end eCommers Responsive Website
 
 ـــــــــــــــــــــــــــــــــــ
 
-this website for  online shoping jewelry
+this website for online shoping jewelry
 
-ـــــــــــــــــــــــــــــــــــــــ
+ـــــــــــــــــــــــــــــــــــ
 
 
