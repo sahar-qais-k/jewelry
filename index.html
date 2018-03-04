@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>jewelry</title>
+  </head>
+  <body>
+	
+	<div class="mynav ">
+		<nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#"><i class="fa fa-diamond  fa-2x" aria-hidden="true"></i></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <div id="navBar">
+		      <li class="nav-item" v-for="n in nav">
+		        <a class="nav-link" :href="n.url">{{n.name}} </a>
+		      </li>
+		     </div>
+		  </div>
+		</nav>
+	</div>
+
+     
+     <div class="slider">
+     	<div class="load">
+     	</div>
+     	<div class="content">
+	 		<div class="principal">
+	     		<h1>Jewelry</h1>
+	     		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	     	</div>
+     	</div>
+     </div>
+		
+  	<div class="container" id="item">
+  		<div class="row con-box" >
+			
+	  		<div class="col-12 col-md-3 box" v-for="product in products">
+	  			<div class="wrapper">
+					<img :src="product.image">
+					<div class="overlay">
+						<div class="box-content">
+						<h5>{{product.price}}</h5><a :href="product.url">{{product.name}}</a>
+						</div>
+					</div>
+				</div>	 
+	  		</div>
+	  		
+	  		<h3><a href="Collection.html">See All Collection</a></h3>
+  		</div>
+  		
+  	</div>
+
+
+
+
+  	<div class="parallax">
+  		<div class="parallax-inner">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-12 col-md-6">
+  						<h2><u>ABOUT US</u></h2><br><br>
+  						<p>Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa Suspendisse in orci enim.pharetra, erat sed fermentum feugiat.
+  						velit mauris egestas quam, ut aliquam massa nisl quis neque.
+  					</p>
+  					</div>
+  					<div class="col-12 col-md-6">
+  						<img src="iraqia.jpg" alt="image">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<hr>
+  	<footer>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col align-self-center icons"  id="footer">
+		  		<a v-for="icon in ficons" href="#"><i :class="icon" aria-hidden="true"></i></a>
+    		</div>
+  		</div>
+  	</div>
+  	</footer>
+  	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jewelry.js"></script>
+  </body>
+
+</html>

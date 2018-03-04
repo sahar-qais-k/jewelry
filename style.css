@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+	background-color: rgba(0,0,0,0.3) !important;
+
+}
+.navbar-brand{
+	color: #FFF !important;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.navbar .navbar-nav{
+	margin: 0 auto;
+}
+.navbar .nav-item a{
+	color: #FFF !important;
+}
+.navbar form button{
+	background-color: #FF1;
+	color: #FFF !important;
+	border: 0;
+}
+.navbar form button:hover{
+	background-color: #000;
+}
+#navBar{
+	display: flex;
+}
+/*///////////////////////////////////*/
+
+
+.load{
+	animation: slide  2s;
+}
+.slider{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 30s infinite;
+}
+.content{
+color: #FFF;
+width: 100%;
+height: 100vh;
+background-color: rgba(0,0,0,0.4);
+}
+.principal {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.principal h1{
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+.principal p{
+   font-size: 20px;
+}
+@keyframes slide{
+	0%{
+		background-image: url('sl1.jpg');
+	}
+	20%{
+		background-image: url('sl1.jpg');
+	}
+	20.01%{
+		background-image: url('sl222.jpg');
+	}
+	40%{
+		background-image: url('sl222.jpg');
+	}
+	40.01%{
+		background-image: url('we.jpg');
+	}
+	60%{
+		background-image: url('we.jpg');
+	}
+	60.01%{
+		background-image: url('sl1.jpg');
+	}
+	80%{
+		background-image: url('sl1.jpg');
+	}
+	80.01%{
+		background-image: url('sl222.jpg');
+	}
+	100%{
+		background-image: url('sl222.jpg');
+	}
+}
+
+
+/*///////////////////////////////////*/
+
+.con-box {
+	margin-top: 200px;
+	margin-bottom: 200px;
+	justify-content: center;
+	
+}
+ .box{
+ 	
+	width: 250px;
+	height: 350px;
+	background: orange;
+	padding: 5px;
+	transition: 1s;
+
+}
+.box:hover{
+	transform: scale(1.2);
+	box-shadow: 2px 2px 2px #000;
+	z-index: 2;
+}
+.con-box h3 {
+		margin-top: 40px;
+		
+}
+.con-box h3 a{
+	color: #9e9e9e;
+}
+.con-box h3 a:hover{
+	color: #ffa500;
+  
+}
+
+
+/*///////////////////////////////////*/
+
+
+.wrapper{
+	font-family:sans-serif;
+	
+	margin: 0 auto;
+	position:relative;
+}
+img{
+	opacity: 1;
+	display: block;
+	width:100%;
+	height: 100%
+	transition: .5s ease;
+}
+.box-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	
+	color:#fff;
+	white-space: nowrap;
+	overflow: hidden
+}
+.box-content a{
+	font-size: 24px;
+	display: block;
+	background-color: #ff771d;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+	 
+}
+.overlay{
+	opacity: 0;
+}
+.wrapper:hover img{
+	opacity: .5;
+}
+.wrapper:hover .overlay{
+	opacity: 1;
+}
+
+
+
+
+/*///////////////////////////////////*/
+
+
+.parallax h2{
+	
+	font-size: 275%;
+	color: #e5e5e5;
+	text-transform: uppercase;
+	letter-spacing: 1%;
+	
+}
+.parallax p{
+	font-size: 150%;
+	color: #e5e5e5;
+	letter-spacing: 1%;
+}
+.parallax img{
+	width: 314px;
+	height: 425px;
+	margin: 0 0 0 auto;
+	border: 7px solid #e5e5e5;
+	
+}
+.parallax{
+	background: url("parallax6.jpg") repeat fixed 100%;
+}
+.parallax-inner{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
+
+
+/*///////////////////////////////////*/
+
+.icons{
+    text-align:center;
+    padding-top: 20%;
+	padding-bottom: 20%;
+	margin: 0; 
+	
+}
+/* This styling applies to each icon */
+.icons a{
+    color:gray;
+    text-decoration: none;
+    font-size: 1.8em;
+    letter-spacing: 20px;  
+     
+}
+/* This is optional...changes the color of the font that's under the mouse pointer */
+   .icons a:hover{
+    color:orange; 
+}
+
+
+
+/*//////////////////collection css/////////////////*/
+
+/*//////////////////collection parallax/////////////////*/
+
+.parallax1 h1{
+	font-size: 380%;
+	color: #e5e5e5;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+	text-align: center;
+	
+	
+}
+
+.parallax1{
+	background: url("parallax7.jpg") repeat fixed 100%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.parallax-inner1{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+
+
+/*//////////////////all collection /////////////////*/
+
+
+.imagebox{
+	position: relative;
+	margin: 40px auto;
+	border-radius: 4px;
+	overflow: hidden;
+	max-width: 300px;
+	border: 1px solid #bdbdc2;
+}
+.imagebox h3{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: -24px;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	transition: .5s;
+}
+.imagebox:hover h3{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.imagebox ul{
+	position: absolute;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #ff771d;
+	opacity: 0.8;
+	transform: translateY(50px);
+	transition: .5s;
+}
+.imagebox:hover ul{
+	transform: translateY(-60px);
+}
+.imagebox ul li {
+	list-style: none;
+	box-sizing: border-box;
+}
+.imagebox ul li a {
+	color: #fff;
+	font-size: 20px;
+	margin: 10px;
+	display: inline-block;
+}
+.imagebox ul li a:hover{
+	background-color: #ff771d;
+	opacity: 0.5;
+}
+
+
+/*//////////////////products /////////////////*/
+
+
+
+
+.products img{
+	padding:0;
+	margin: 0;
+	
+}
+
+.products h3{
+	color: #ffc107;
+	padding-top: 10px;
+}
+.products h6 {
+	color: #9e9e9e;
+	padding-top: 10px;
+	font-size: 40px;
+
+}
+.products p {
+	color: #9e9e9e;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+ .materel select{
+	border: 5px solid #9e9e9e !important;
+	padding-right: 30% !important;
+	white-space: 5px;
+
+}
+.counter{
+	padding-top: 10px;
+	display: flex;
+}
+.counter button{
+	padding: 5px;
+}
+
+
+
+/*//////////////////team /////////////////*/
+
+
+
+.team {
+	padding: 15px;
+	box-sizing: border-box;
+}
+.team ul{
+	padding: 20px;
+	background-color: #dadfd9;
+	border-radius: 5px;
+}
+.team ul li{
+	list-style: none;
+	color: #9e9e9e;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: #000;
+
+}
+
+
